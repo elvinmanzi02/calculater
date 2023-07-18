@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("image/backgroundimg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+#display {
+    border: 1px solid grey;
+    margin: 3em 0.1em 0em 0.1em;
+    border-radius: 5px;
+}
+.container {
+    width: 150px;
+    height: 200px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 5px solid grey;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 1px;
+}
+
+.buttons button:hover {
+    background-color: #0056b3;
+}
+
+.buttons button:active {
+    background-color: #003d80;
+}
+
+
+.operator {
+    background-color: #FFCC00;
+}
+
+.sign {
+    background-color: darkgrey;
+}
+#clear {
+    background-color: red;
+}
+
+.buttons #clear:hover {
+    background-color: #0056b3;
+}
+
+.buttons #clear:active {
+    background-color: #003d80;
+} 
+
+
+#equal {
+    background-color: green;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.buttons #equal {
+    border-radius: 5px;
+}
+
+.buttons #equal:hover {
+    background-color: #0056b3;
+}
+
+.buttons #equal:active {
+    background-color: #003d80;
+}   
