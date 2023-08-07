@@ -170,3 +170,28 @@ body{
         height: 40px;
     }
 }
+
+
+@media screen and (max-width : 1650px) {
+    .container {
+        width: 620px;
+        height: 580px;
+    }
+
+    .buttons {
+        grid-template-rows: repeat(5, 80px);
+    }
+
+    #display {
+        height: 90px;
+        font-size: 50px;
+        margin-top: 0px;
+    }
+
+    button {
+        font-size: 60px;
+    }
+    .footer {
+        height: 60px;
+    }
+}

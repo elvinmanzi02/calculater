@@ -100,8 +100,5 @@ document.addEventListener("DOMContentLoaded", function() {
           updateDisplay();
       }
   });
-
-    const nbr = 1.2*9;
-    console.log(nbr);
   });
 
