@@ -74,39 +74,58 @@ body{
     margin: 1px;
 }
 
-.buttons button:hover {
-    background-color: #0056b3;
+#delete {
+    background-color: rgb(241, 122, 122);
 }
 
-.buttons button:active {
-    background-color: #003d80;
+#delete:hover {
+    background-color: #c47575;
 }
 
+#delete:active {
+    background-color: rgb(241, 122, 122);
+}
+
+.operand:hover {
+    background-color: #e4dada;
+}
 
 .operator {
     background-color: #FFCC00;
 }
+.operator:hover {
+    background-color: rgb(229, 195, 134);
+}
+.operator:active {
+    background-color: #FFCC00;
+}
 
 .sign {
-    background-color: darkgrey;
+    background-color: rgb(161, 151, 151);
+}
+
+.sign:active {
+    background-color: rgb(161, 151, 151);
+}
+
+.sign:hover {
+    background-color: grey;
 }
 #clear {
     background-color: red;
 }
 
 .buttons #clear:hover {
-    background-color: #0056b3;
+    background-color: #e37272;
 }
 
 .buttons #clear:active {
-    background-color: #003d80;
+    background-color:rgb(241, 122, 122);
 } 
 
 
 #equal {
     background-color: green;
-    grid-column-start: 3;
-    grid-column-end: 5;
 }
 
 .buttons #equal {
@@ -114,9 +133,40 @@ body{
 }
 
 .buttons #equal:hover {
-    background-color: blue;
+    background-color: rgb(185, 228, 185);
 }
 
 .buttons #equal:active {
     background-color: darkgreen;
 }   
+
+@media screen and (max-width : 400px ) {
+    .container {
+        width: 300px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width : 1450px) {
+    .container {
+        width: 600px;
+        height: 560px;
+    }
+
+    .buttons {
+        grid-template-rows: repeat(5, 80px);
+    }
+
+    #display {
+        height: 90px;
+        font-size: 50px;
+        margin-top: 0px;
+    }
+
+    button {
+        font-size: 40px;
+    }
+    .footer {
+        height: 40px;
+    }
+}

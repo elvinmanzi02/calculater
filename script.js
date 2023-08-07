@@ -83,11 +83,25 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   
+
     document.getElementById("dot").addEventListener("click", function() {
-      if (currentInput.indexOf(".") === -1) {
-        currentInput += ".";
-        updateDisplay();
+      if (currentInput === "") {
+          currentInput = "0."; // Add "0" before the dot if input is empty
+      } else if (currentInput.indexOf(".") === -1) {
+          currentInput += ".";
       }
-    });
+      updateDisplay();
   });
   
+
+    document.getElementById("delete").addEventListener("click", function() {
+      if (currentInput.length > 0) {
+          currentInput = currentInput.slice(0, -1);
+          updateDisplay();
+      }
+  });
+
+    const nbr = 1.2*9;
+    console.log(nbr);
+  });
+
